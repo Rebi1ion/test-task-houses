@@ -1,0 +1,24 @@
+//media-queries
+$f-hd: 1920px;
+$hd: 1440px;
+$laptop: 1024px;
+$tablet: 768px;
+$tablet-m: 530px;
+$mobile: 428px;
+$mobile-m: 332px;
+
+:root {
+	//fonts
+	--font-family: "Montserrat", sans-serif;
+	--second-family: "Daysone", sans-serif;
+
+	--primary-line-height: 145%;
+
+	//colors
+	--primary-title-color: #fff;
+	--secondary-title-color: #000;
+	--primary-subtitle-color: #ffa433;
+	--secondary-subtitle-color: rgba(255, 255, 255, 0.24);
+	--primary-text: #181818;
+	--primary-span-color: #ffb75e;
+}

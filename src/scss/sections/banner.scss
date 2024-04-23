@@ -1,0 +1,117 @@
+.banner {
+	position: relative;
+	max-width: 100%;
+	height: rem(772px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@media (max-width: $hd) {
+		height: rem(534px);
+	}
+	@media (max-width: $tablet) {
+		height: rem(454px);
+	}
+	@media (max-width: $mobile) {
+		height: rem(374px);
+	}
+}
+
+.banner-background {
+	&_mobile {
+		display: none;
+	}
+
+	@media (max-width: $tablet-m) {
+		display: none;
+		&_mobile {
+			display: block;
+		}
+	}
+}
+
+.banner-container {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	@media (max-width: $mobile) {
+		margin-top: rem(25px);
+	}
+	@media (max-width: $mobile-m) {
+		margin-top: rem(15px);
+	}
+}
+
+.banner__title {
+	font-size: rem(43px);
+	text-align: center;
+	margin-bottom: rem(8px);
+
+	@media (max-width: $hd) {
+		font-size: rem(36px);
+		margin-bottom: rem(5px);
+	}
+	@media (max-width: $tablet) {
+		font-size: rem(26px);
+		margin-bottom: rem(4px);
+	}
+	@media (max-width: $tablet-m) {
+		font-size: rem(20px);
+	}
+	@media (max-width: $mobile) {
+		font-size: rem(16px);
+		margin-bottom: rem(10px);
+	}
+
+	@media (max-width: $mobile-m) {
+		font-size: rem(15px);
+		margin-bottom: rem(8px);
+	}
+}
+
+.banner_tagline {
+	font-size: rem(24px);
+	color: var(--secondary-subtitle-color);
+	line-height: var(--primary-line-height);
+	text-transform: uppercase;
+	margin-left: 14%;
+
+	@media (max-width: $hd) {
+		font-size: rem(16px);
+	}
+	@media (max-width: $tablet) {
+		font-size: rem(15px);
+	}
+	@media (max-width: $mobile) {
+		font-size: rem(15px);
+	}
+	@media (max-width: $mobile-m) {
+		font-size: rem(14px);
+	}
+}
+
+.banner__subtitle {
+	font-size: rem(32px);
+	line-height: var(--primary-line-height);
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+	text-align: center;
+	color: var(--primary-subtitle-color);
+
+	@media (max-width: $hd) {
+		font-size: rem(16px);
+	}
+	@media (max-width: $tablet) {
+		font-size: rem(15px);
+	}
+	@media (max-width: $mobile) {
+		font-size: rem(15px);
+		max-width: 70%;
+		align-self: center;
+	}
+	@media (max-width: $mobile-m) {
+		font-size: rem(14px);
+	}
+}

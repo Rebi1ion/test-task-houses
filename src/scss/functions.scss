@@ -1,0 +1,7 @@
+@function rem($px) {
+	@return calc($px / 16px * 1rem);
+}
+
+@function percent($containerWidth, $blockWidth){
+	@return calc($blockWidth / $containerWidth * 100%);
+}

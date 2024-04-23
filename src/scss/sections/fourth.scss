@@ -1,0 +1,63 @@
+.tickers {
+	font-family: var(--second-family);
+	line-height: 145%;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.ticker {
+	font-size: rem(32px);
+	display: flex;
+	white-space: nowrap;
+	align-items: center;
+	height: rem(110px);
+	gap: 27px;
+	width: 200%;
+
+	&_first {
+		background-color: var(--primary-span-color);
+		margin-bottom: rem(24px);
+		animation: firstTickerAnimation 15s linear infinite;
+	}
+
+	&_second {
+		background-color: #ffcb46;
+		animation: secondTickerAnimation 15s linear infinite;
+	}
+
+	@media (max-width: $hd) {
+		height: rem(86px);
+		font-size: rem(28px);
+
+		&_first {
+			margin-bottom: rem(12px);
+		}
+	}
+
+	@media (max-width: $tablet) {
+		height: rem(36px);
+		font-size: rem(12px);
+
+		&_first {
+			margin-bottom: rem(7px);
+		}
+	}
+}
+
+@keyframes firstTickerAnimation {
+	0% {
+		transform: translateX(-50%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes secondTickerAnimation {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-34%);
+	}
+}

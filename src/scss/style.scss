@@ -1,0 +1,19 @@
+@import "reset.scss";
+@import "fonts.scss";
+@import "functions.scss";
+@import "variables.scss";
+html {
+	overflow-x: hidden;
+}
+body {
+	font-family: var(--font-family);
+	font-weight: 400;
+	height: auto;
+	overflow-x: hidden;
+}
+
+@import "common.scss";
+@import "sections/banner.scss";
+@import "sections/second.scss";
+@import "sections/third.scss";
+@import "sections/fourth.scss";

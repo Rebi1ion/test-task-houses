@@ -1,0 +1,35 @@
+.container {
+	position: relative;
+	max-width: rem(1550px);
+	padding: 0 10px;
+	margin: 0 auto;
+	height: 100%;
+	@media (max-width: $hd) {
+		max-width: rem(1170px);
+	}
+	@media (max-width: $tablet) {
+		max-width: 100%;
+	}
+}
+
+.title {
+	line-height: var(--primary-line-height);
+	text-transform: uppercase;
+	font-family: var(--second-family);
+
+	&_primary {
+		color: var(--primary-title-color);
+	}
+	&_secondary {
+		color: var(--secondary-title-color);
+	}
+}
+
+.background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	top: 0;
+	left: 0;
+}
